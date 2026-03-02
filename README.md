@@ -1,7 +1,9 @@
 mjpg-streamer
 =============
 
-This is a fork of http://sourceforge.net/projects/mjpg-streamer/ with added support for the Raspberry Pi camera via the input_raspicam plugin.
+This is a fork of https://github.com/jacksonliam/mjpg-streamer (original: http://sourceforge.net/projects/mjpg-streamer/) with added support for stdin input via the input_stdin plugin.
+
+The typical usage of the input_stdin plugin is to push camera frames via pipe.
 
 mjpg-streamer is a command line application that copies JPEG frames from one
 or more input plugins to multiple output plugins. It can be used to stream
@@ -34,6 +36,7 @@ Input plugins:
 * input_ptp2
 * input_raspicam ([documentation](mjpg-streamer-experimental/plugins/input_raspicam/README.md))
 * input_uvc ([documentation](mjpg-streamer-experimental/plugins/input_uvc/README.md))
+* input_stdin
 
 Output plugins:
 
